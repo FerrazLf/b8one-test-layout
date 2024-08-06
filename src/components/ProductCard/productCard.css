@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+.product-card__text {
+  color: var(--color-2-500, #353535);
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 80px;
+}
+
+.product-card__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card__item {
+  display: flex;
+  position: relative;
+  padding: 20px;
+  flex-direction: column;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-card__colors {
+  display: flex;
+  gap: 8px;
+}
+
+.product-card__color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.product-card__button {
+  background: #40b25c;
+  color: #fff;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.product-card__button:hover {
+  background: #1c6c3e;
+}
+
+.product-card__price {
+  color: #da4b4f;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.product-card__title {
+  color: var(--color-2-900, #000);
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.product-card__description {
+  color: var(--color-2-900, #000);
+  font-family: "Titillium Web", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  line-height: normal;
+  opacity: 0.5;
+}
+
+.product-card__button.added {
+  background: #a3f9b9;
+
+  color: #000;
+}
+
+.product-card__buttons {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.wishlist-button {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  position: absolute;
+  right: 8px;
+  top: 9px;
+}
+
+.wishlist-button .react-icons {
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+/* .wishlist-button.favorited {
+  background-color: red;
+  border-color: red;
+} */
+
+.wishlist-button.favorited .react-icons {
+  color: white;
+}
